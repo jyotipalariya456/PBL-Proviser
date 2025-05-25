@@ -192,7 +192,7 @@ const Contact = () => {
         error: null,
         loading: false,
       });
-      navigate("/");
+      //navigate("/");
     }
   };
 
@@ -271,7 +271,7 @@ const Contact = () => {
                     <></>
                   )}
                   <Box className={classes.boxBtn}>
-                    <Button className={classes.btn} onClick={handleSubmit}>
+                    <Button  type="submit" className={classes.btn} disabled={loading}>
                       <Typography style={{ color: "white", fontSize: 18 }}>
                         {loading ? "Submiting..." : "Submit"}
                       </Typography>

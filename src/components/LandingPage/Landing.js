@@ -398,3 +398,8 @@ const Landing = () => {
 };
 
 export default Landing;
+
+
+
+
+//OS--Page-Replacement-Algorithm-Simulator

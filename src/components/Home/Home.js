@@ -115,15 +115,16 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
   const classes = useStyles();
 
-  const [frame, setFrame] = useState(0);
-
+  const [frame, setFrame] = useState(0); 
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [seq, setSeq] = useState([]);
   const [result, setResult] = useState("");
   const [seqArr, setSeqArr] = useState([]);
 
-  const frameHanadler = (e) => {
+  const frameHanadler = (e) => { //"Number of Frames" ka value handle karta hai.
+
+
     setFrame(e.target.value);
     // if (Number.isInteger(e.target.value)) {
     //   setError(null);
